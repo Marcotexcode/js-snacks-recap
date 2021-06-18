@@ -18,9 +18,9 @@ function rage() {
   //   La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.    
   const numeriRange = [];
 
-    numeri.forEach((element) => {
+    numeri.forEach((element,index) => {
 
-        if (a === element || b === element) {
+        if (a === index || b === index) {
 
             numeriRange.push(element);
 
