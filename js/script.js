@@ -9,6 +9,7 @@
 
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 
+function rage() {
 
     const numeri = [1,2,3,4,5,6,7,8,9,];
     const a = 2;
@@ -21,13 +22,16 @@
 
         if (a === element || b === element) {
 
-            numeriRange.push(element.length);
+            numeriRange.push(element);
 
         }
            
     });
 
-    console.log(numeriRange);
+    return numeriRange;
+}
+
+    console.log(rage());
 
 
 
