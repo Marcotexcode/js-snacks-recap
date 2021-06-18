@@ -7,7 +7,6 @@
 
 
 
-// Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 
 function rage() {
 
@@ -15,14 +14,13 @@ function rage() {
     const a = 2;
     const b = 7;
 
-  //   La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.    
-  const numeriRange = [];
+    const numeriRange = [];
 
     numeri.forEach((element,index) => {
 
-        if (a === index || b === index) {
+        if (index >= a && index <= b) {
 
-            numeriRange.push(element);
+            numeriRange.push( element);
 
         }
            
@@ -34,13 +32,3 @@ function rage() {
     console.log(rage());
 
 
-
-//FUNCTION
-
-// function rage(array, min, max) {
-//     var newItems = [];
-//     for(var i = min - 1; i < max; i++ ){
-//         newItems.push(array[i]);
-//     }
-//     return newItems;
-// }
